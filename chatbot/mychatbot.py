@@ -7,7 +7,7 @@ if __name__ == "__main__":
     from langchain_community.chat_models import ChatOpenAI
     from langchain.chains.question_answering import load_qa_chain
 
-    OPENAI_API_KEY=""
+    OPENAI_KEY=""
 
     #Upload PDF files
     st.header("My First Chatbot")
@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
         #define the LLM
         llm = ChatOpenAI(
-            openai_api_key = OPENAI_API_KEY,
+            openai_key = OPENAI_KEY,
             temperature = 0,
             max_tokens = 1000,
             model_name = "gpt-3.5-turbo"
