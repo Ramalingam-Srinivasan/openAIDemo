@@ -7,7 +7,7 @@ if __name__ == "__main__":
     from langchain_community.chat_models import ChatOpenAI
     from langchain.chains.question_answering import load_qa_chain
 
-    OPENAI_API_KEY="sk-proj"
+    OPENAI_API_KEY=""
 
     #Upload PDF files
     st.header("My First Chatbot")
